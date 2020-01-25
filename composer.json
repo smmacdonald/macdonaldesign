@@ -28,12 +28,14 @@
         "drupal/entity_browser": "^2.4",
         "drupal/entity_embed": "^1.0",
         "drupal/file_browser": "^1.2",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/libraries": "^3.0@alpha",
         "drupal/linkit": "^4.3",
         "drupal/media_entity_bulk_upload": "3.x-dev",
         "drupal/module_filter": "^3.1",
         "drupal/token": "^1.6",
-        "drupal/views_data_export": "^1.0@beta"
+        "drupal/views_data_export": "^1.0@beta",
+        "drush/drush": "^10.2"
     },
     "require-dev": {
     },
