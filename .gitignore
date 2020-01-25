@@ -11,7 +11,7 @@ sites/*/settings.php
 # to use this file add the following to your settings.local.php file:
 #   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
 sites/*/services.local.yml
-sites/*/settings.php
+sites/*/services.yml
 
 # ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
 /sites/default/**/files
