@@ -1593,17 +1593,17 @@
     },
     {
         "name": "drupal/core",
-        "version": "8.8.1",
-        "version_normalized": "8.8.1.0",
+        "version": "8.8.2",
+        "version_normalized": "8.8.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core.git",
-            "reference": "d339279f4c4b89477e0f4a8b775eb5dcb86b3087"
+            "reference": "f997857003276c2ae6d27db30f0eab9c7dd10e62"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/drupal/core/zipball/d339279f4c4b89477e0f4a8b775eb5dcb86b3087",
-            "reference": "d339279f4c4b89477e0f4a8b775eb5dcb86b3087",
+            "url": "https://api.github.com/repos/drupal/core/zipball/f997857003276c2ae6d27db30f0eab9c7dd10e62",
+            "reference": "f997857003276c2ae6d27db30f0eab9c7dd10e62",
             "shasum": ""
         },
         "require": {
@@ -1769,7 +1769,7 @@
             "drupal/workflows": "self.version",
             "drupal/workspaces": "self.version"
         },
-        "time": "2019-12-18T10:34:03+00:00",
+        "time": "2020-02-01T19:51:15+00:00",
         "type": "drupal-core",
         "extra": {
             "drupal-scaffold": {
@@ -1825,8 +1825,8 @@
     },
     {
         "name": "drupal/core-composer-scaffold",
-        "version": "8.8.1",
-        "version_normalized": "8.8.1.0",
+        "version": "8.8.2",
+        "version_normalized": "8.8.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1874,8 +1874,8 @@
     },
     {
         "name": "drupal/core-project-message",
-        "version": "8.8.1",
-        "version_normalized": "8.8.1.0",
+        "version": "8.8.2",
+        "version_normalized": "8.8.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-project-message.git",
@@ -1914,17 +1914,17 @@
     },
     {
         "name": "drupal/core-recommended",
-        "version": "8.8.1",
-        "version_normalized": "8.8.1.0",
+        "version": "8.8.2",
+        "version_normalized": "8.8.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-recommended.git",
-            "reference": "a2215237489ccb456219bd30b26649e6899b6f35"
+            "reference": "67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a2215237489ccb456219bd30b26649e6899b6f35",
-            "reference": "a2215237489ccb456219bd30b26649e6899b6f35",
+            "url": "https://api.github.com/repos/drupal/core-recommended/zipball/67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3",
+            "reference": "67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3",
             "shasum": ""
         },
         "require": {
@@ -1937,7 +1937,7 @@
             "doctrine/common": "v2.7.3",
             "doctrine/inflector": "v1.2.0",
             "doctrine/lexer": "1.0.2",
-            "drupal/core": "8.8.1",
+            "drupal/core": "8.8.2",
             "easyrdf/easyrdf": "0.9.1",
             "egulias/email-validator": "2.1.11",
             "guzzlehttp/guzzle": "6.3.3",
@@ -1985,7 +1985,7 @@
         "conflict": {
             "webflo/drupal-core-strict": "*"
         },
-        "time": "2019-12-18T10:34:03+00:00",
+        "time": "2020-02-01T19:51:15+00:00",
         "type": "metapackage",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -1995,8 +1995,8 @@
     },
     {
         "name": "drupal/core-vendor-hardening",
-        "version": "8.8.1",
-        "version_normalized": "8.8.1.0",
+        "version": "8.8.2",
+        "version_normalized": "8.8.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -2032,6 +2032,68 @@
         "keywords": [
             "drupal"
         ]
+    },
+    {
+        "name": "drupal/crop",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/crop.git",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/crop-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "7e948d35f5d8c0a24515d3b7e37391da4d0b19d8"
+        },
+        "require": {
+            "drupal/core": "^8.7.7 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1578492183",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Drupal Media Team",
+                "homepage": "https://www.drupal.org/user/3260690"
+            },
+            {
+                "name": "phenaproxima",
+                "homepage": "https://www.drupal.org/user/205645"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            },
+            {
+                "name": "woprrr",
+                "homepage": "https://www.drupal.org/user/858604"
+            }
+        ],
+        "description": "Provides storage and API for image crops.",
+        "homepage": "https://www.drupal.org/project/crop",
+        "support": {
+            "source": "https://git.drupalcode.org/project/crop",
+            "issues": "https://www.drupal.org/project/issues/crop"
+        }
     },
     {
         "name": "drupal/csv_serialization",
@@ -2720,6 +2782,59 @@
         "homepage": "https://www.drupal.org/project/file_browser",
         "support": {
             "source": "https://git.drupalcode.org/project/file_browser"
+        }
+    },
+    {
+        "name": "drupal/focal_point",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/focal_point.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "b274a5f4484ce99dece492dc7ae7149b34982244"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/crop": "*"
+        },
+        "require-dev": {
+            "drupal/crop": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1569333485",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "bleen",
+                "homepage": "https://www.drupal.org/user/77375"
+            }
+        ],
+        "description": "Allows users to specify the focal point of an image for use during cropping.",
+        "homepage": "https://www.drupal.org/project/focal_point",
+        "support": {
+            "source": "https://git.drupalcode.org/project/focal_point"
         }
     },
     {
@@ -3428,22 +3543,26 @@
     },
     {
         "name": "drupal/views_data_export",
-        "version": "1.0.0-beta3",
-        "version_normalized": "1.0.0.0-beta3",
+        "version": "1.0.0-beta4",
+        "version_normalized": "1.0.0.0-beta4",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/views_data_export.git",
-            "reference": "8.x-1.0-beta3"
+            "reference": "8.x-1.0-beta4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-beta3.zip",
-            "reference": "8.x-1.0-beta3",
-            "shasum": "4a6f5660e6d6258edee61b59c89d8dee01c9fcca"
+            "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-beta4.zip",
+            "reference": "8.x-1.0-beta4",
+            "shasum": "aba2df5742d6f231c489cc0e01998a6d364ce4bb"
         },
         "require": {
             "drupal/core": "*",
-            "drupal/csv_serialization": "*"
+            "drupal/csv_serialization": "~1.4"
+        },
+        "require-dev": {
+            "drupal/search_api": "~1.12",
+            "drupal/xls_serialization": "~1.0"
         },
         "type": "drupal-module",
         "extra": {
@@ -3451,8 +3570,8 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.0-beta3",
-                "datestamp": "1569365482",
+                "version": "8.x-1.0-beta4",
+                "datestamp": "1580333468",
                 "security-coverage": {
                     "status": "not-covered",
                     "message": "Beta releases are not covered by Drupal security advisories."
@@ -3498,17 +3617,17 @@
     },
     {
         "name": "drush/drush",
-        "version": "10.2.0",
-        "version_normalized": "10.2.0.0",
+        "version": "10.2.1",
+        "version_normalized": "10.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drush-ops/drush.git",
-            "reference": "f068021102caf90042f83a280c9316eb7e29ca12"
+            "reference": "756e7a9e82bfe424f02ff5eb006bf514b9a4365d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/drush-ops/drush/zipball/f068021102caf90042f83a280c9316eb7e29ca12",
-            "reference": "f068021102caf90042f83a280c9316eb7e29ca12",
+            "url": "https://api.github.com/repos/drush-ops/drush/zipball/756e7a9e82bfe424f02ff5eb006bf514b9a4365d",
+            "reference": "756e7a9e82bfe424f02ff5eb006bf514b9a4365d",
             "shasum": ""
         },
         "require": {
@@ -3533,18 +3652,17 @@
             "webmozart/path-util": "^2.1.0"
         },
         "require-dev": {
-            "composer/installers": "^1.2",
+            "composer/installers": "^1.7",
             "cweagans/composer-patches": "~1.0",
             "drupal/alinks": "1.0.0",
+            "drupal/core-recommended": "^8.8",
             "g1a/composer-test-scenarios": "^3",
             "lox/xhprof": "dev-master",
             "phpunit/phpunit": "^4.8.36 || ^6.1",
             "squizlabs/php_codesniffer": "^2.7 || ^3",
-            "vlucas/phpdotenv": "^2.4",
-            "webflo/drupal-core-require-dev": "8.7.x-dev",
-            "webflo/drupal-core-strict": "8.7.x-dev"
+            "vlucas/phpdotenv": "^2.4"
         },
-        "time": "2020-01-25T17:04:39+00:00",
+        "time": "2020-02-07T17:53:36+00:00",
         "bin": [
             "drush"
         ],
@@ -5362,8 +5480,8 @@
     },
     {
         "name": "symfony/filesystem",
-        "version": "v4.4.3",
-        "version_normalized": "4.4.3.0",
+        "version": "v4.4.4",
+        "version_normalized": "4.4.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/filesystem.git",
@@ -5414,8 +5532,8 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v4.4.3",
-        "version_normalized": "4.4.3.0",
+        "version": "v4.4.4",
+        "version_normalized": "4.4.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
@@ -6460,17 +6578,17 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v4.4.3",
-        "version_normalized": "4.4.3.0",
+        "version": "v4.4.4",
+        "version_normalized": "4.4.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "7cfa470bc3b1887a7b2a47c0a702a84ad614fa92"
+            "reference": "46b53fd714568af343953c039ff47b67ce8af8d6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/7cfa470bc3b1887a7b2a47c0a702a84ad614fa92",
-            "reference": "7cfa470bc3b1887a7b2a47c0a702a84ad614fa92",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/46b53fd714568af343953c039ff47b67ce8af8d6",
+            "reference": "46b53fd714568af343953c039ff47b67ce8af8d6",
             "shasum": ""
         },
         "require": {
@@ -6493,7 +6611,7 @@
             "ext-intl": "To show region name in time zone dump",
             "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
         },
-        "time": "2020-01-04T13:00:46+00:00",
+        "time": "2020-01-25T12:44:29+00:00",
         "bin": [
             "Resources/bin/var-dump-server"
         ],

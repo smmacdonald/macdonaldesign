@@ -28,6 +28,7 @@
         "drupal/entity_browser": "^2.4",
         "drupal/entity_embed": "^1.0",
         "drupal/file_browser": "^1.2",
+        "drupal/focal_point": "^1.2",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/libraries": "^3.0@alpha",
         "drupal/linkit": "^4.3",
