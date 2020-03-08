@@ -1,0 +1,12 @@
+default:
+  version: 1.x
+  css:
+    theme:
+      assets/css/styles.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+  js:
+    assets/js/scripts.js: {}

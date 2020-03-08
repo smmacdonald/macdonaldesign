@@ -1,18 +1,34 @@
 @charset "UTF-8";
 
-@import 'variables';
+/**
+ * This file will be overwritten when the Bootstrap Framework source files
+ * are compiled using the SASS CSS pre-processor.
+ */
+
+// Bootstrap Framework.
+@import '../packages/bootstrap/scss/bootstrap-reboot.scss';
+@import '../packages/bootstrap/scss/bootstrap-grid.scss';
+@import '../packages/bootstrap/scss/bootstrap';
+
+// Fontawesome Library.
+@import '../packages/fontawesome/scss/brands';
+@import '../packages/fontawesome/scss/regular';
+@import '../packages/fontawesome/scss/solid';
+@import '../packages/fontawesome/scss/fontawesome';
+
+// Slick Carousel Library.
+@import '../packages/slick/slick/slick.css';
+@import '../packages/slick/slick/slick-theme.css';
+
+// Default variables.
+@import "variables";
+
+// Base-theme overrides.
+@import 'overrides';
 
 @import 'elements_theme';
-@import 'flexslider';
-@import 'slick_slider';
 @import 'header';
-@import 'hero_slideshow';
 @import 'hero_banner';
-@import 'featured_events';
-@import 'featured_article';
-@import 'mega_menu';
+@import 'hero_slideshow';
+@import 'slick_slider';
 @import 'push_navigation';
-@import 'sidebar_menu';
-@import 'blocks';
-@import 'paragraphs';
-@import 'views';
