@@ -7,7 +7,6 @@ logo: 'assets/images/logo.png'
 libraries:
   - macdonaldesign/default
 
-
 base theme: classy
 
 regions:

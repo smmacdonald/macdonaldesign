@@ -10,7 +10,6 @@
   Drupal.behaviors.commnTweaks = {
     attach: function (context, settings) {
 
-
       /**
        * background image paralax effect
       **/
