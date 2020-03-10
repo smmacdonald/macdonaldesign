@@ -1,0 +1,15 @@
+.view-id-projects {
+	&.view-display-id-block_1 {
+		>.view-content {
+			.views-row {
+				width: calc(100% / 4);
+				@media (max-width: $screen-md-max) {
+					width: calc(100% / 3);
+				}
+				@media (max-width: $screen-sm-max) {
+					width: calc(100% / 2);
+				}
+			}
+		}
+	}
+}

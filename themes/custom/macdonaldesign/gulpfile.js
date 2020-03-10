@@ -70,7 +70,7 @@ gulp.task('postcss', function () {
 gulp.task('scripts', function() {
   return gulp.src(js_concat)
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('./assets/scripts/concat'));
+    .pipe(gulp.dest('./assets/js/concat'));
 });
 
 //---------------------------------------------------------------------------------------------
