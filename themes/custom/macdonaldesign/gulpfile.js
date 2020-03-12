@@ -2,10 +2,10 @@
 
 // Array of Javascript files to concatenate and minify
 var js_concat = [
-  './assets/packages/bootstrap/dist/js/bootstrap.bundle.js',
+  './assets/packages/bootstrap/dist/js/bootstrap.bundle.min.js',
   './assets/packages/imagesloaded/imagesloaded.pkgd.min.js',
-  './assets/packages/slick/slick/slick.js',
-  './assets/packages/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+  './assets/packages/slick/slick/slick.min.js',
+  './assets/packages/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
   './assets/packages/isotope/dist/isotope.pkgd.min.js',
   './assets/scripts/scripts.js'
 ];
@@ -77,7 +77,7 @@ gulp.task('scripts', function() {
 // TASK: uglify
 //---------------------------------------------------------------------------------------------
 gulp.task('uglify', function () {
-  return gulp.src('./assets/scripts/concat/all.js')
+  return gulp.src('./assets/js/concat/all.js')
     .pipe(uglify())
     .pipe(rename({
       suffix: ".min",

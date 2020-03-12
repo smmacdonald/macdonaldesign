@@ -9,4 +9,4 @@ default:
     - core/drupal
     - core/drupalSettings
   js:
-    assets/js/all.min.js: { minified: true }
+    assets/js/concat/all.js: {}

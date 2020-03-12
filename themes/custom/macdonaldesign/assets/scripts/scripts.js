@@ -41,7 +41,16 @@
         });
       });
 
+			$('.view-id-projects.view-display-id-block_1').once('commnTweaks').each(function(){
+				$('.view-id-projects.view-display-id-block_1').isotope({
+				  // set itemSelector so .grid-sizer is not used in layout
+				  itemSelector: '.view-id-projects.view-display-id-block_1 >.view-content >.views-row',
+				  percentPosition: true
+				})
+			});
+
     }
   };
+
 
 })(jQuery, Drupal, drupalSettings);
