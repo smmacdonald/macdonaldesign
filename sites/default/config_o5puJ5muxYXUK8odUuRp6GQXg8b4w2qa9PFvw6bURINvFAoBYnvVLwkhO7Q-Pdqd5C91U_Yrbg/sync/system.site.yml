@@ -1,0 +1,15 @@
+uuid: 5658cb60-9e74-4fa3-95ed-d3e20ea30221
+name: MacDonalDesign
+mail: smmacdonald@me.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/50
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

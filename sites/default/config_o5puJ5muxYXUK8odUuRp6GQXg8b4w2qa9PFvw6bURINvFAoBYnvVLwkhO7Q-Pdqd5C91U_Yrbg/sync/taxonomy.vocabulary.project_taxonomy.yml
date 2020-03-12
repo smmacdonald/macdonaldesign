@@ -1,0 +1,8 @@
+uuid: 0b7e0c09-4c57-468f-a53e-d418f4f8768e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Project Taxonomy'
+vid: project_taxonomy
+description: ''
+weight: 0

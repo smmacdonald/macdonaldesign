@@ -1,0 +1,21 @@
+uuid: 17a6c785-bb8d-44b8-a2ea-7c6969332973
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_filter_class_name
+    - taxonomy.vocabulary.project_taxonomy
+  module:
+    - text
+id: taxonomy_term.project_taxonomy.field_filter_class_name
+field_name: field_filter_class_name
+entity_type: taxonomy_term
+bundle: project_taxonomy
+label: 'Filter Class Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

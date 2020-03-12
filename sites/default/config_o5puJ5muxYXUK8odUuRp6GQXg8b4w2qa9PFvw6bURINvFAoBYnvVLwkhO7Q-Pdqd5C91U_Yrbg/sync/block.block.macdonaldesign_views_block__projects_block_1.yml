@@ -1,0 +1,30 @@
+uuid: 8bb83dc8-5c3c-41ee-a9c7-b1fd5d8c24a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - system
+    - views
+  theme:
+    - macdonaldesign
+id: macdonaldesign_views_block__projects_block_1
+theme: macdonaldesign
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:projects-block_1'
+settings:
+  id: 'views_block:projects-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
