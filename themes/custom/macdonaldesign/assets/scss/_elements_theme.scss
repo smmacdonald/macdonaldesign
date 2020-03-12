@@ -4,3 +4,24 @@
     height: auto;
   }
 }
+
+.portfoio-item-wrap {
+	position: relative;
+
+	.item{
+		&-image {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&-link {
+			.title {}
+			.terms {
+				.view-id-taxonomies_by_nid {
+					&.view-display-id-block_1 {}
+				}
+			}
+		}
+	}
+}
