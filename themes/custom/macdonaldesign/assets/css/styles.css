@@ -19006,13 +19006,86 @@ readers do not read off random characters that represent icons */
   height: auto;
 }
 
+body {
+  background: #141414;
+  color: #bbb;
+}
+
 .portfoio-item-wrap {
   position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.portfoio-item-wrap .item-image {
+  transition: ease all 0.4s;
 }
 
 .portfoio-item-wrap .item-image img {
   width: 100%;
   height: auto;
+}
+
+.portfoio-item-wrap .item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: ease opacity 0.4s;
+}
+
+.portfoio-item-wrap .item-link .title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+.portfoio-item-wrap .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 {
+  color: #fff;
+}
+
+.portfoio-item-wrap .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 .view-content {
+  text-align: center;
+}
+
+.portfoio-item-wrap .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 .view-content .term-row {
+  display: inline-block;
+}
+
+.portfoio-item-wrap .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 .view-content .term-row .project-icon {
+  font-size: 24px;
+  padding: 10px;
+  transition: ease all 0.4s;
+  -webkit-transform: translateY(50px) rotate(360deg);
+          transform: translateY(50px) rotate(360deg);
+  opacity: 0;
+}
+
+.portfoio-item-wrap .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 .view-content .term-row:nth-child(2) .project-icon {
+  transition-delay: .2s;
+}
+
+.portfoio-item-wrap .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 .view-content .term-row:nth-child(3) .project-icon {
+  transition-delay: .4s;
+}
+
+.portfoio-item-wrap:hover .item-image, .portfoio-item-wrap:focus .item-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portfoio-item-wrap:hover .item-link, .portfoio-item-wrap:focus .item-link {
+  opacity: 1;
+}
+
+.portfoio-item-wrap:hover .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 .view-content .term-row .project-icon, .portfoio-item-wrap:focus .item-link .terms .view-id-taxonomies_by_nid.view-display-id-block_1 .view-content .term-row .project-icon {
+  opacity: 1;
+  -webkit-transform: translateY(0) rotate(0);
+          transform: translateY(0) rotate(0);
 }
 
 .paragraph--type--person-carousel {
