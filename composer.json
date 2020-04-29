@@ -46,7 +46,9 @@
         "drupal/twig_tweak": "^2.4",
         "drupal/twig_vardumper": "^1.2",
         "drupal/views_data_export": "^1.0@beta",
-        "drush/drush": "^10.2"
+        "drupal/webform": "^5.10",
+        "drush/drush": "^10.2",
+        "wikimedia/composer-merge-plugin": "^1.4"
     },
     "require-dev": {
     },
@@ -91,6 +93,11 @@
                 "      https://www.drupal.org/getting-involved",
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
+            ]
+        },
+        "merge-plugin": {
+            "include": [
+                "modules/contrib/webform/composer.libraries.json"
             ]
         }
     }
