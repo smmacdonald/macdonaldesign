@@ -39,6 +39,7 @@
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.6",
         "drupal/redirect": "^1.5",
+        "drupal/smtp": "^1.0@beta",
         "drupal/token": "^1.6",
         "drupal/twig_extensions": "^2.0",
         "drupal/twig_field_value": "^1.2",

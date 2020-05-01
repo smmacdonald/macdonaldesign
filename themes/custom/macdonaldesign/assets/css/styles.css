@@ -19011,6 +19011,17 @@ body {
   color: #bbb;
 }
 
+.site-name {
+  display: none;
+}
+
+.path-node.page-node-type-project .layout-content {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .portfoio-item-wrap {
   position: relative;
   overflow: hidden;
