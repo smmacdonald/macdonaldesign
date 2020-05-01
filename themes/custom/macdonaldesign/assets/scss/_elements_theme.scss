@@ -16,14 +16,29 @@ body {
 
 .path-node,
 .path-taxonomy {
-	&.page-node-type-project {
-		.layout-content {
-			width: 100%;
-			max-width: 1400px;
-			padding: 0 15px;
-			margin: 0 auto;
-		}
+	.layout-content {
+		width: 100%;
+		max-width: 1400px;
+		padding: 0 15px;
+		margin: 0 auto;
 	}
+}
+
+#block-macdonaldesign-branding {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	.site-logo {
+		display: inline-block;
+		padding: 15px;
+	}
+}
+
+#block-macdonaldesign-content {
+	width: 100%;
+	max-width: 1400px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .portfoio-item-wrap {

@@ -19015,8 +19015,26 @@ body {
   display: none;
 }
 
-.path-node.page-node-type-project .layout-content,
-.path-taxonomy.page-node-type-project .layout-content {
+.path-node .layout-content,
+.path-taxonomy .layout-content {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#block-macdonaldesign-branding {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#block-macdonaldesign-branding .site-logo {
+  display: inline-block;
+  padding: 15px;
+}
+
+#block-macdonaldesign-content {
   width: 100%;
   max-width: 1400px;
   padding: 0 15px;
