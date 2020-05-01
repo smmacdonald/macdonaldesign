@@ -19015,7 +19015,8 @@ body {
   display: none;
 }
 
-.path-node.page-node-type-project .layout-content {
+.path-node.page-node-type-project .layout-content,
+.path-taxonomy.page-node-type-project .layout-content {
   width: 100%;
   max-width: 1400px;
   padding: 0 15px;

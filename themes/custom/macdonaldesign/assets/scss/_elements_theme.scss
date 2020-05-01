@@ -14,7 +14,8 @@ body {
 	display: none;
 }
 
-.path-node {
+.path-node,
+.path-taxonomy {
 	&.page-node-type-project {
 		.layout-content {
 			width: 100%;
