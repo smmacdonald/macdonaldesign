@@ -10,3 +10,12 @@ default:
     - core/drupalSettings
   js:
     assets/js/concat/all.js: {}
+
+imagesLoaded:
+  remote: https://github.com/desandro/imagesloaded
+  license:
+    name: MIT
+    url: https://desandro.mit-license.org/
+    gpl-compatible: true
+  js:
+    assets/packages/imagesloaded/imagesloaded.pkgd.min.js: { minified: true }

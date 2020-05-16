@@ -76,7 +76,12 @@
 				  // set itemSelector so .grid-sizer is not used in layout
 				  itemSelector: '.view-id-projects.view-display-id-block_1 >.view-content >.views-row',
 				  percentPosition: true
-				})
+				});
+
+	      $('.view-id-projects.view-display-id-block_1').imagesLoaded().progress( function() {
+	        $('.view-id-projects.view-display-id-block_1').isotope('layout');
+	      });
+
 			});
 
     }
