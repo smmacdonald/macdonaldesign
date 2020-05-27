@@ -59,7 +59,7 @@
 		<div{{ item.attributes.addClass('field__item') }}>
   	{% if count == 1 %}
 
-			{% set img = image_url|replace({'/mdd/sites/default/files/':"public://"}) %}
+			{% set img = image_url|replace({'/sites/default/files/':"public://"}) %}
 			{{ drupal_image(img) }}
 
 		{% else %}
