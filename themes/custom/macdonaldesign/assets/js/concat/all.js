@@ -71,6 +71,10 @@
         });
       });
 
+
+			/**
+			 * Isotope with imagesLoaded
+			**/
 			$('.view-id-projects.view-display-id-block_1').once('commnTweaks').each(function(){
 				$('.view-id-projects.view-display-id-block_1').isotope({
 				  // set itemSelector so .grid-sizer is not used in layout
@@ -82,6 +86,20 @@
 	        $('.view-id-projects.view-display-id-block_1').isotope('layout');
 	      });
 
+			});
+
+
+      /*
+       * Video Tab Carousel
+      */
+      $('.page-node-type-project', context).once('slickSliderInit').each(function () {
+        $(this).find('.portfolio-slider').slick({
+          autoplay: true,
+          autoplaySpeed: 5000,
+          dots: true,
+          infinite: true,
+          speed: 300,
+        });
 			});
 
     }

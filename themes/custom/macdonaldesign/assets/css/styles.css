@@ -19549,6 +19549,10 @@ body {
   max-width: 100%;
 }
 
+.portfolio-slider .field__item img {
+  width: 100%;
+}
+
 .view-id-projects.view-display-id-block_1 > .view-content .views-row {
   width: calc(100% / 4);
 }
