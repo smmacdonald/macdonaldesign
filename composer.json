@@ -50,7 +50,7 @@
         "drupal/twig_field_value": "^1.2",
         "drupal/twig_link_attributes": "1.x-dev",
         "drupal/twig_tweak": "^2.4",
-        "drupal/twig_vardumper": "^1.2",
+        "drupal/twig_vardumper": "^2.1",
         "drupal/views_data_export": "^1.0@beta",
         "drupal/webform": "^5.10",
         "drupal/xmlsitemap": "^1.0@RC",

@@ -15,6 +15,6 @@
     "source": "http://cgit.drupalcode.org/twig_vardumper"
   },
   "require": {
-    "symfony/var-dumper":  "~3.4|~4.2"
+    "symfony/var-dumper":  "~4.2|~5"
   }
 }
