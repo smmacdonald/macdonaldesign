@@ -19550,7 +19550,8 @@ body {
 }
 
 .portfolio-slider .field__item img {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .view-id-projects.view-display-id-block_1 > .view-content .views-row {

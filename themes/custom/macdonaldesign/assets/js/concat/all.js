@@ -75,16 +75,43 @@
 			/**
 			 * Isotope with imagesLoaded
 			**/
-			$('.view-id-projects.view-display-id-block_1').once('commnTweaks').each(function(){
-				$('.view-id-projects.view-display-id-block_1').isotope({
+			$('.view-id-projects.view-display-id-block_1',context).once('commnTweaks').each(function(){
+
+        var $grid = $(this).children('.view-content'),
+            $checkboxes = $(this).find('.filter-item'),
+            $reset = $(this).find('.isotope-reset');
+
+				$grid.isotope({
 				  // set itemSelector so .grid-sizer is not used in layout
 				  itemSelector: '.view-id-projects.view-display-id-block_1 >.view-content >.views-row',
 				  percentPosition: true
 				});
 
-	      $('.view-id-projects.view-display-id-block_1').imagesLoaded().progress( function() {
-	        $('.view-id-projects.view-display-id-block_1').isotope('layout');
+	      $grid.imagesLoaded().progress( function() {
+	        $grid.isotope('layout');
 	      });
+
+        // bind filter button click
+        $checkboxes.on('click',function(){
+          var filters = [];
+          $(this).toggleClass('active');
+          // get checked checkboxes values
+          $checkboxes.filter('.active').each(function(){
+            filters.push( $(this).data('filter') );
+          });
+          filters = filters.join(', ');
+          $grid.isotope({ filter: filters });
+
+console.log('clicked filter item');
+        });
+
+          // bind filter rest
+          $reset.click(function(){
+            $checkboxes.each(function(){
+              $(this).removeClass('active');
+            });
+            $grid.isotope({ filter: '*' });
+          });
 
 			});
 
@@ -99,6 +126,7 @@
           dots: true,
           infinite: true,
           speed: 300,
+          adaptiveHeight: false
         });
 			});
 
