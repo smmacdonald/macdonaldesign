@@ -63,16 +63,7 @@
 
         // bind filter button click
         $checkboxes.on('click',function(){
-          var filters = [];
-          $(this).toggleClass('active');
-          // get checked checkboxes values
-          $checkboxes.filter('.active').each(function(){
-            filters.push( $(this).data('filter') );
-          });
-          filters = filters.join(', ');
-          $grid.isotope({ filter: filters });
-
-console.log('clicked filter item');
+          $grid.isotope({ filter: $(this).data('filter') });
         });
 
           // bind filter rest
