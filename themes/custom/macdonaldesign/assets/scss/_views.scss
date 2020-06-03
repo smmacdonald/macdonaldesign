@@ -13,3 +13,120 @@
 		}
 	}
 }
+
+
+.portfoio-item-wrap {
+	position: relative;
+	overflow: hidden;
+	display: block;
+
+	.item{
+		&-image {
+			transition: ease all 0.4s;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			padding: 15px;
+			background-color: rgba(0,0,0,0.7);
+			opacity: 0;
+			transition: ease opacity 0.4s;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			@media screen and (max-width: 767px) {
+				background-color: rgba(0,0,0,0.9);
+				opacity: .8;
+			}
+
+			.title {
+				color: #fff;
+				text-align: center;
+				font-size: 24px;
+				line-height: 1.2;
+				width: 100%;
+				@media screen and (max-width: 767px) {
+					font-size: 18px;
+				}
+			}
+			.terms {
+				width: 100%;
+
+				.view-id-taxonomies_by_nid {
+					&.view-display-id-block_1 {
+						color: #fff;
+
+						.view-content {
+							text-align: center;
+
+							.term-row {
+								display: inline-block;
+
+								.project-icon {
+									font-size: 24px;
+									padding: 10px;
+									transition: ease all 0.4s;
+									transform: translateY(50px) rotate(360deg);
+									opacity: 0;
+									@media screen and (max-width: 767px) {
+										transform: translateY(0) rotate(0);
+										font-size: 18px;
+										opacity: 1;
+									}
+								}
+								&:nth-child(2) {
+									.project-icon {
+										transition-delay: .2s;
+									}
+								}
+								&:nth-child(3) {
+									.project-icon {
+										transition-delay: .3s;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&:hover,
+	&:focus {
+		.item{
+			&-image {
+				transform: scale(1.1);
+
+				img {}
+			}
+			&-link {
+				opacity: 1;
+
+				.title {}
+				.terms {
+					.view-id-taxonomies_by_nid {
+						&.view-display-id-block_1 {
+							.view-content {
+								.term-row {
+									.project-icon {
+										opacity: 1;
+										transform: translateY(0) rotate(0);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
