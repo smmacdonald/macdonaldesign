@@ -19479,6 +19479,19 @@ body {
   margin: 0 auto;
 }
 
+.view-id-projects.view-display-id-block_1 .view-header {
+  text-align: center;
+}
+
+.view-id-projects.view-display-id-block_1 .view-header .filter-items {
+  position: relative;
+}
+
+.view-id-projects.view-display-id-block_1 .view-header .filter-items .list-inline-item {
+  vertical-align: top;
+  text-align: left;
+}
+
 .view-id-projects.view-display-id-block_1 > .view-content .views-row {
   width: calc(100% / 4);
 }

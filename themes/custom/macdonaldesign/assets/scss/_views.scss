@@ -1,5 +1,20 @@
 .view-id-projects {
 	&.view-display-id-block_1 {
+		.view-header {
+			text-align: center;
+
+			.filter-items {
+				position: relative;
+
+				.list-inline-item {
+					vertical-align: top;
+					text-align: left;
+
+					.filter-title {}
+					.list-inline {}
+				}
+			}
+		}
 		>.view-content {
 			.views-row {
 				width: calc(100% / 4);
