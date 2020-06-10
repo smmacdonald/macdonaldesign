@@ -1,57 +1,63 @@
-.paragraph--type--person-carousel {
-  overflow: hidden;
+// slick slider general styling
+.slick-initialized {
+	position: relative;
 
-  .view-id-carousels.view-display-id-block_1 {
-    .slick-arrow {
-      z-index: 10;
+	.slick-list {
+		overflow: hidden;
 
-      &.slick-prev {
-        left: 15px;
-      }
-      &.slick-next {
-        right: 15px;
-      }
-    }
-    .slick-list {
-      margin: 0 -10px;
-      overflow: visible;
-      .hide-overflow &{
-        overflow-y: hidden;
-      }
-      &:before,
-      &:after {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 100%;
-        background: transparent;
-        position: absolute;
-        top: 0;
-        z-index: 2;
-      }
-      &:before {
-        right: 100%;
-      }
-      &:after {
-        left: 100%;
-      }
-      .slick-slide {
-        float: left;
-        padding: 0 10px;
-        opacity: 0.2;
-        transition: ease all 0.4s;
-        &.slick-active {
-          opacity: 1;
-        }
-        img {
-          width: 100%;
-          height: auto;
-          max-width: 100%;
-        }
-      }
-    }
-  }
+		.slick-track {
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.slick-slide {
+				float: left;
+			}
+		}
+	}
+	.slick-arrow {
+		opacity: 0;
+		transition: ease opacity 0.4s;
+
+		&.slick-prev {
+			left: 25px !important;
+			&:before {
+				content: '\f104';
+			}
+		}
+		&.slick-next {
+			right: 25px !important;
+			&:before {
+				content: '\f105';
+			}
+		}
+		&.slick-prev,
+		&.slick-next {
+			z-index: 9999;
+			height: 100%;
+
+			&:before {
+				display: inline-block;
+				font-family: 'Font Awesome 5 Free';
+				font-size: 42px;
+				font-weight: 900;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+
+				color: #fff !important;
+				text-shadow: 2px 2px 2px #999;
+			}
+		}
+	}
+	&:hover {
+		.slick-arrow {
+			opacity: 1;
+		}
+	}
 }
+
 
 
 .portfolio-slider {
