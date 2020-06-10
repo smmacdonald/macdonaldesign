@@ -93,6 +93,12 @@
 
         // bind filter button click
         $checkboxes.on('click',function(){
+	        if ( ($(this).data('filter') === '.website') || $(this).parents('.level-2').length ) {
+		        $($(this).data('filter')+'.level-2').removeClass('d-none');
+	        } else {
+		        $('.level-2').addClass('d-none');
+	        }
+
           $grid.isotope({ filter: $(this).data('filter') });
         });
 
