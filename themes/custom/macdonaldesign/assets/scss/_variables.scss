@@ -6,3 +6,7 @@ $screen-md-min: 992px;                // @media (max-width: $screen-sm-max) { ..
 $screen-sm-max: ($screen-md-min - 1); // @media (min-width: $screen-md-min) { ... }
 $screen-lg-min: 1200px;               // @media (max-width: $screen-md-max) { ... }
 $screen-md-max: ($screen-lg-min - 1); // @media (min-width: $screen-lg-min) { ... }
+
+
+$colorTeal: #4ac1af;
+$colorTealHover: #2c7369;

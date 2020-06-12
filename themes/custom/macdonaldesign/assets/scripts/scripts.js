@@ -63,6 +63,8 @@
 
         // bind filter button click
         $checkboxes.on('click',function(){
+	        $checkboxes.removeClass('active');
+	        $(this).addClass('active');
 	        if ( ($(this).data('filter') === '.website') || $(this).parents('.level-2').length ) {
 		        $($(this).data('filter')+'.level-2').removeClass('d-none');
 	        } else {
@@ -74,9 +76,6 @@
 
           // bind filter rest
           $reset.click(function(){
-            $checkboxes.each(function(){
-              $(this).removeClass('active');
-            });
             $grid.isotope({ filter: '*' });
           });
 

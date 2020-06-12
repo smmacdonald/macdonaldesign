@@ -6,9 +6,28 @@
 			.filter-items {
 				position: relative;
 
+				.list-inline {
+					margin: 0;
+				}
 				.list-inline-item {
 					vertical-align: top;
 					text-align: left;
+					cursor: pointer;
+
+					&:hover {
+						.filter-item {
+							text-decoration: underline;
+						}
+					}
+					.filter-item {
+						display: block;
+						padding: 7px 10px;
+
+						&.active {
+							color: $colorTealHover;
+							text-decoration: underline;
+						}
+					}
 
 					.filter-title {}
 					.list-inline {}
@@ -16,6 +35,8 @@
 			}
 		}
 		>.view-content {
+			margin-top: 15px;
+
 			.views-row {
 				width: calc(100% / 4);
 				@media (max-width: $screen-md-max) {

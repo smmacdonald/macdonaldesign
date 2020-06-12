@@ -1,16 +1,43 @@
 .embedded-entity {
-
   img {
     max-width: 100%;
     height: auto;
   }
 }
+h1, .h1 {
+	@media screen and (max-width: 991px) {
+		font-size: 2.4em;
+	}
+	@media screen and (max-width: 767px) {
+		font-size: 2.3em;
+	}
+	@media screen and (max-width: 500px) {
+		font-size: 2.2em;
+	}
+}
+h2, .h2 {}
+h3, .h3 {}
+h4, .h4 {}
+h5, .h5 {}
+h6, .h6 {}
 
 body {
 	background: #141414;
 	color: #bbb;
 	font-family: sans-serif;
 	line-height: 1.2;
+}
+a {
+	color: $colorTeal;
+	&:hover {
+		text-decoration: underline;
+		color: $colorTealHover;
+	}
+}
+.fa,
+.fas,
+.fab {
+	color: $colorTeal;
 }
 
 .site-name {
