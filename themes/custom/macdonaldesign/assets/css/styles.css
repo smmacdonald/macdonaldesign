@@ -19465,7 +19465,7 @@ a:hover {
 }
 
 .slick-initialized .slick-arrow {
-  opacity: 0;
+  opacity: .4;
   transition: ease opacity 0.4s;
 }
 
@@ -19498,7 +19498,7 @@ a:hover {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff !important;
+  color: #4ac1af !important;
   text-shadow: 2px 2px 2px #999;
 }
 
