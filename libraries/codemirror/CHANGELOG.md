@@ -1,3 +1,61 @@
+## 5.53.2 (2020-04-21)
+
+### Bug fixes
+
+[show-hint addon](https://codemirror.net/doc/manual.html#addon_show-hint): Fix a regression that broke completion picking.
+
+## 5.53.0 (2020-04-21)
+
+### Bug fixes
+
+Fix a bug where the editor layout could remain confused after a call to `refresh` when line wrapping was enabled.
+
+[dialog addon](https://codemirror.net/doc/manual.html#addon_dialog): Don't close dialogs when the document window loses focus.
+
+[merge addon](https://codemirror.net/doc/manual.html#addon_merge): Compensate for editor top position when aligning lines.
+
+[vim bindings](https://codemirror.net/demo/vim.html): Improve EOL handling.
+
+[emacs bindings](https://codemirror.net/demo/emacs.html): Include default keymap as a fallback.
+
+[julia mode](https://codemirror.net/mode/julia/): Fix an infinite loop bug.
+
+[show-hint addon](https://codemirror.net/doc/manual.html#addon_show-hint): Scroll cursor into view when picking a completion.
+
+### New features
+
+New option: [`screenReaderLabel`](https://codemirror.net/doc/manual.html#option_screenReaderLabel) to add a label to the editor.
+
+New mode: [wast](https://codemirror.net/mode/wast/).
+
+## 5.52.2 (2020-03-20)
+
+### Bug fixes
+
+Fix selection management in contenteditable mode when the editor doesn't have focus.
+
+Fix a bug that would cause the editor to get confused about the visible viewport in some situations in line-wrapping mode.
+
+[markdown mode](https://codemirror.net/mode/markdown/): Don't treat single dashes as setext header markers.
+
+[zenburn theme](https://codemirror.net/demo/theme.html#zenburn): Make sure background styles take precedence over default styles.
+
+[css mode](https://codemirror.net/mode/css/): Recognize a number of new properties.
+
+## 5.52.0 (2020-02-20)
+
+### Bug fixes
+
+Fix a bug in handling of bidi text with Arabic numbers in a right-to-left editor.
+
+Fix a crash when combining file drop with a `"beforeChange"` filter.
+
+Prevent issue when passing negative coordinates to `scrollTo`.
+
+### New features
+
+[lint](https://codemirror.net/doc/manual.html#addon_lint) and [tern](https://codemirror.net/demo/tern.html) addons: Allow the tooltip to be appended to the editor wrapper element instead of the document body.
+
 ## 5.51.0 (2020-01-20)
 
 ### Bug fixes
@@ -12,7 +70,7 @@ Make sure `clearHistory` clears the history in all linked docs with a shared his
 
 ### New features
 
-[vim bindings](https://codemirror.net/demo/vim.html): Support `gi`, gI`, and `gJ`.
+[vim bindings](https://codemirror.net/demo/vim.html): Support `gi`, `gI`, and `gJ`.
 
 ## 5.50.2 (2020-01-01)
 

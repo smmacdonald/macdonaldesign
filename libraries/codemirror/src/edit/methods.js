@@ -415,7 +415,7 @@ export default function(CodeMirror) {
       clearCaches(this)
       scrollToCoords(this, this.doc.scrollLeft, this.doc.scrollTop)
       updateGutterSpace(this.display)
-      if (oldHeight == null || Math.abs(oldHeight - textHeight(this.display)) > .5)
+      if (oldHeight == null || Math.abs(oldHeight - textHeight(this.display)) > .5 || this.options.lineWrapping)
         estimateLineHeights(this)
       signal(this, "refresh", this)
     }),
@@ -469,7 +469,7 @@ function findPosH(doc, pos, dir, unit, visually) {
   let oldPos = pos
   let origDir = dir
   let lineObj = getLine(doc, pos.line)
-  let lineDir = visually && doc.cm && doc.cm.getOption("direction") == "rtl" ? -dir : dir
+  let lineDir = visually && doc.direction == "rtl" ? -dir : dir
   function findNextLine() {
     let l = pos.line + lineDir
     if (l < doc.first || l >= doc.first + doc.size) return false

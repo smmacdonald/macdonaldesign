@@ -28,9 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The underlying structure for the Algolia Places instantsearch widget.
  */
-var AlgoliaPlacesWidget =
-/*#__PURE__*/
-function () {
+var AlgoliaPlacesWidget = /*#__PURE__*/function () {
   function AlgoliaPlacesWidget() {
     var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
         defaultPosition = _ref.defaultPosition,

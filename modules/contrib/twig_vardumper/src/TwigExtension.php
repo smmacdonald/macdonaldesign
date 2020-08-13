@@ -15,26 +15,15 @@ class TwigExtension extends AbstractExtension {
    * {@inheritdoc}
    */
   public function getFunctions() {
-    // The dump is safe if var_dump is overridden by xdebug.
-    $isDumpOutputHtmlSafe = \extension_loaded('xdebug')
-      // The false means that it was not set (and the default is on) or it
-      // explicitly enabled.
-      && (FALSE === ini_get('xdebug.overload_var_dump') || ini_get('xdebug.overload_var_dump'))
-      // The false means that it was not set (and the default is on) or it
-      // explicitly enabled xdebug.overload_var_dump produces HTML only when
-      // html_errors is also enabled.
-      && (FALSE === ini_get('html_errors') || ini_get('html_errors'))
-      || 'cli' === \PHP_SAPI;
-
     return [
       new TwigFunction('dump', [$this, 'drupalDump'], [
-        'is_safe' => $isDumpOutputHtmlSafe ? ['html'] : [],
+        'is_safe' => ['html'],
         'needs_context' => TRUE,
         'needs_environment' => TRUE,
         'is_variadic' => TRUE,
       ]),
       new TwigFunction('vardumper', [$this, 'drupalDump'], [
-        'is_safe' => $isDumpOutputHtmlSafe ? ['html'] : [],
+        'is_safe' => ['html'],
         'needs_context' => TRUE,
         'needs_environment' => TRUE,
         'is_variadic' => TRUE,

@@ -5,7 +5,7 @@ core: 8.x
 core_version_requirement: ^8 || ^9
 package: Development
 
-# Information added by Drupal.org packaging script on 2020-06-01
-version: '8.x-2.1'
+# Information added by Drupal.org packaging script on 2020-06-11
+version: '8.x-2.2'
 project: 'twig_vardumper'
-datestamp: 1591040450
+datestamp: 1591885102

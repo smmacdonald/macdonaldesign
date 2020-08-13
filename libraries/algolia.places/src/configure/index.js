@@ -13,6 +13,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var extractParams = function extractParams(_ref) {
   var hitsPerPage = _ref.hitsPerPage,
+      postcodeSearch = _ref.postcodeSearch,
       aroundLatLng = _ref.aroundLatLng,
       aroundRadius = _ref.aroundRadius,
       aroundLatLngViaIP = _ref.aroundLatLngViaIP,
@@ -43,6 +44,10 @@ var extractParams = function extractParams(_ref) {
     extracted.aroundLatLng = aroundLatLng;
   } else if (aroundLatLngViaIP !== undefined) {
     extracted.aroundLatLngViaIP = aroundLatLngViaIP;
+  }
+
+  if (postcodeSearch) {
+    extracted.restrictSearchableAttributes = 'postcode';
   }
 
   return _objectSpread({}, extracted, {

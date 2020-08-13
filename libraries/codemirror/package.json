@@ -1,28 +1,28 @@
 {
-  "_from": "codemirror@5.51.0",
-  "_id": "codemirror@5.51.0",
+  "_from": "codemirror@5.53.2",
+  "_id": "codemirror@5.53.2",
   "_inBundle": false,
-  "_integrity": "sha512-vyuYYRv3eXL0SCuZA4spRFlKNzQAewHcipRQCOKgRy7VNAvZxTKzbItdbCl4S5AgPZ5g3WkHp+ibWQwv9TLG7Q==",
+  "_integrity": "sha512-wvSQKS4E+P8Fxn/AQ+tQtJnF1qH5UOlxtugFLpubEZ5jcdH2iXTVinb+Xc/4QjshuOxRm4fUsU2QPF1JJKiyXA==",
   "_location": "/codemirror",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "codemirror@5.51.0",
+    "raw": "codemirror@5.53.2",
     "name": "codemirror",
     "escapedName": "codemirror",
-    "rawSpec": "5.51.0",
+    "rawSpec": "5.53.2",
     "saveSpec": null,
-    "fetchSpec": "5.51.0"
+    "fetchSpec": "5.53.2"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/codemirror/-/codemirror-5.51.0.tgz",
-  "_shasum": "7746caaf5223e68f5c55ea11e2f3cc82a9a3929e",
-  "_spec": "codemirror@5.51.0",
-  "_where": "/private/var/folders/9p/clj0fc754y35m01btd46043c0000gn/T/tmp.lo26wGvI",
+  "_resolved": "https://registry.npmjs.org/codemirror/-/codemirror-5.53.2.tgz",
+  "_shasum": "9799121cf8c50809cca487304e9de3a74d33f428",
+  "_spec": "codemirror@5.53.2",
+  "_where": "/private/var/folders/9p/clj0fc754y35m01btd46043c0000gn/T/tmp.PxSSStVX",
   "author": {
     "name": "Marijn Haverbeke",
     "email": "marijnh@gmail.com",
@@ -128,6 +128,9 @@
     },
     {
       "name": "Alexandre Bique"
+    },
+    {
+      "name": "Alex Churchill"
     },
     {
       "name": "alexey-k"
@@ -328,6 +331,12 @@
       "name": "benbro"
     },
     {
+      "name": "Benedikt Meurer"
+    },
+    {
+      "name": "benhormann"
+    },
+    {
       "name": "Beni Cherniavsky-Paskin"
     },
     {
@@ -406,6 +415,9 @@
       "name": "Brian Grinstead"
     },
     {
+      "name": "BrianHung"
+    },
+    {
       "name": "Brian Sletten"
     },
     {
@@ -437,6 +449,9 @@
     },
     {
       "name": "Casey Klebba"
+    },
+    {
+      "name": "cBiscuit87"
     },
     {
       "name": "César González Íñiguez"
@@ -517,6 +532,9 @@
       "name": "ciaranj"
     },
     {
+      "name": "clone-it"
+    },
+    {
       "name": "clso"
     },
     {
@@ -542,6 +560,9 @@
     },
     {
       "name": "Curtis Gagliardi"
+    },
+    {
+      "name": "d8888"
     },
     {
       "name": "dagsta"
@@ -623,6 +644,9 @@
     },
     {
       "name": "David Pathakjee"
+    },
+    {
+      "name": "David Rodrigues"
     },
     {
       "name": "David Santana"
@@ -796,6 +820,9 @@
       "name": "Florian Felten"
     },
     {
+      "name": "Fons van der Plas"
+    },
+    {
       "name": "Forbes Lindesay"
     },
     {
@@ -956,6 +983,9 @@
       "name": "Hector Oswaldo Caballero"
     },
     {
+      "name": "Hein Htat"
+    },
+    {
       "name": "Hélio"
     },
     {
@@ -992,6 +1022,9 @@
       "name": "Ian Dickinson"
     },
     {
+      "name": "ianhi"
+    },
+    {
       "name": "Ian Rose"
     },
     {
@@ -1017,6 +1050,9 @@
     },
     {
       "name": "Ilya Kharlamov"
+    },
+    {
+      "name": "Ilya Zverev"
     },
     {
       "name": "Ingo Richter"
@@ -1119,6 +1155,9 @@
     },
     {
       "name": "Jayaprabhakar"
+    },
+    {
+      "name": "Jay Contonio"
     },
     {
       "name": "Jaydeep Solanki"
@@ -1368,6 +1407,9 @@
       "name": "kubelsmieci"
     },
     {
+      "name": "kvncp"
+    },
+    {
       "name": "KwanEsq"
     },
     {
@@ -1584,6 +1626,9 @@
       "name": "Matthew Beale"
     },
     {
+      "name": "Matthew Casperson"
+    },
+    {
       "name": "matthewhayes"
     },
     {
@@ -1642,6 +1687,9 @@
     },
     {
       "name": "mce2"
+    },
+    {
+      "name": "Mélanie Chauvel"
     },
     {
       "name": "melpon"
@@ -1925,6 +1973,9 @@
       "name": "Patil Arpith"
     },
     {
+      "name": "Patrick Kettner"
+    },
+    {
       "name": "Patrick Stoica"
     },
     {
@@ -2090,7 +2141,13 @@
       "name": "robertop23"
     },
     {
+      "name": "Roberto Vidal"
+    },
+    {
       "name": "Robert Plummer"
+    },
+    {
+      "name": "Roman Janusz"
     },
     {
       "name": "Rrandom"
@@ -2100,6 +2157,9 @@
     },
     {
       "name": "Ruslan Osmanov"
+    },
+    {
+      "name": "rvalavicius"
     },
     {
       "name": "Ryan Pangrle"
@@ -2336,6 +2396,9 @@
       "name": "TDaglis"
     },
     {
+      "name": "Teja"
+    },
+    {
       "name": "tel"
     },
     {
@@ -2379,6 +2442,9 @@
     },
     {
       "name": "Tim Baumann"
+    },
+    {
+      "name": "Tim Gates"
     },
     {
       "name": "Timothy Farrell"
@@ -2463,6 +2529,9 @@
     },
     {
       "name": "Vaibhav Sagar"
+    },
+    {
+      "name": "vamshi.revu"
     },
     {
       "name": "VapidWorx"
@@ -2617,5 +2686,5 @@
     "watch": "rollup -w -c"
   },
   "style": "lib/codemirror.css",
-  "version": "5.51.0"
+  "version": "5.53.2"
 }
